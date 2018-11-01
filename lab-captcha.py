@@ -10,7 +10,6 @@ import random
 import numpy as np
 import PIL
 import tensorflow as tf
-# NEw Import
 from keras.layers import Activation
 
 # Don't modify BEGIN
@@ -96,7 +95,7 @@ def get_cnn_net():
 
 # Don't modify BEGIN
 
-(train_datas,train_labels,test_datas,test_labels) = load_data('/home/share/captcha_data_dontcp/',0.9)
+(train_datas,train_labels,test_datas,test_labels) = load_data('/home/share/your_data/',0.9)
 model = get_cnn_net()
 print model
 model.fit(train_datas, train_labels, epochs=32, batch_size=32, verbose=1, validation_split=0.1)
